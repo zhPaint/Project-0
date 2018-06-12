@@ -1,11 +1,28 @@
 #!/usr/bin/env python3
 
 import json
-from person import Person
+#from person import Person
 
 
-def getJSON():
-	return False
+def getJSON(users, skills):
+		# Read JSON file
+	with open('../grades.json') as data_file:
+		data_loaded = json.load(data_file)
+
+	skills = []
+	users = []
+	
+   # Print formatted JSON
+   # print(json.dumps(data_loaded, sort_keys = True, indent = 4))
+   
+   # Parse each value
+	for name in data_loaded:
+		users.append(name)
+		for language in data_loaded[name]:
+			skills.append(language)
+	print(skills)		
+	
+	yield users, skills
 
 def formObjectiveComparison():
 	return False
@@ -35,14 +52,20 @@ def sortUsers():
 
 
 def main():
+	skills = []
+	users  = []
 
-	# Read JSON file
+	#getJSON(users, skills)
+	
+	
+	
+		# Read JSON file
 	with open('../grades.json') as data_file:
 		data_loaded = json.load(data_file)
 
 	skills = []
 	users = []
-   
+	
    # Print formatted JSON
    # print(json.dumps(data_loaded, sort_keys = True, indent = 4))
    
@@ -51,15 +74,13 @@ def main():
 		users.append(name)
 		for language in data_loaded[name]:
 			skills.append(language)
+	print(skills)	
+	print(users)
+	print(skills)
 	
 	
-	skills = set(skills)
 	
-	
-	thoms = Person('burmls', 'THamus')
-	
-	
-	thoms.printName()
+
 	
 	
 	
