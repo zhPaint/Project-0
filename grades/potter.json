@@ -1,0 +1,28 @@
+{
+	"Potter, Harry":{
+		"DADA": 100,
+		"Potiens":89,
+		"Herbology":65
+	},
+	"Granger, Hermione":{
+		"HAH": 96,
+		"Transfiguration":78
+	},	
+	"Weasley, Ronald":{
+		"DADA": 87,
+		"Transfiguration": 87
+	},	
+	"Malfoy, Draco":{
+		"BAJ": 96,
+		"Charms":68
+	},	
+	"Black, Sirius":{
+		"Lupinism":90,
+		"DADA": 80,
+		"Transfiguration":100
+	},
+	"Chang, Cho":{
+		"HAH": 68,
+		"Herbology":88
+	}
+}

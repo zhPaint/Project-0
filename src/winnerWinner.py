@@ -60,7 +60,7 @@ def main():
 	
 	
 		# Read JSON file
-	with open('../grades.json') as data_file:
+	with open('../grades/potter.json') as data_file:
 		data_loaded = json.load(data_file)
 
 	skills = []
@@ -74,15 +74,9 @@ def main():
 		users.append(name)
 		for language in data_loaded[name]:
 			skills.append(language)
-	print(skills)	
+	
 	print(users)
 	print(skills)
-	
-	
-	
-
-	
-	
 	
 	
 
