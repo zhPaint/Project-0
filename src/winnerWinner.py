@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-#from person import Person
+
 
 
 def getJSON(users, skills):
@@ -75,8 +75,12 @@ def main():
 		for language in data_loaded[name]:
 			skills.append(language)
 	
+	skillsSet = set(skills)
 	print(users)
 	print(skills)
+	print(skillsSet)
+	
+
 	
 	
 
